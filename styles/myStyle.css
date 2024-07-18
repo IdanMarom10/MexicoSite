@@ -675,6 +675,7 @@ h2 {
 }
 #right.col-sm-6 {
     background: hsla(160, 100%, 75%, 0.25);
+    block-size:636px;
 }
 #left.col-sm-6 {
     background: hsla(180, 100%, 50%, 0.25);
