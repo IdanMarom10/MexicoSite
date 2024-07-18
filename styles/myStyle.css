@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: Rubik, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ header {
 }
 
 .navbar-default {
-    margin-left: auto; /* Move the nav links to the left */
+    margin-left: auto; 
 }
 
 .logo-link {
@@ -86,13 +86,13 @@ header {
 }
 
     .content-overlay h1 {
-        font-size: 4em; /* Larger font size */
+        font-size: 4em; 
         margin: 0.5em 0;
         font-family: system-ui;
     }
 
     .content-overlay h2 {
-        font-size: 2.5em; /* Larger font size */
+        font-size: 2.5em; 
         margin: 0.5em 0;
     }
 
@@ -105,7 +105,7 @@ header {
 .split-sections {
     display: flex;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
 .section {
@@ -121,37 +121,33 @@ header {
 
 .caribbean {
     background-color: hsla(180, 100%, 50%, 0.25);
-    ; /* Replace with the correct path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    color: black; /* Ensure the text is readable */
-    /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for better readability
-    opacity: 80%;  */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black;
 }
 
 
 .pacific {
-    background-color: hsla(160, 100%, 75%, 0.25); /* Replace with the correct path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    color: black; /* Ensure the text is readable */
-    /*   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Add text shadow for better readability 
-    opacity: 80%; */
+    background-color: hsla(160, 100%, 75%, 0.25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+
 }
 #pacific-welcome {
-    background-color: hsla(160, 100%, 75%, 0.25); /* Replace with the correct path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-color: hsla(160, 100%, 75%, 0.25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: black;
 }
 #caribbean-welcome {
     background-color: hsla(180, 100%, 50%, 0.25);
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: black;
 }
 .section h2 {
@@ -186,17 +182,17 @@ header {
     }
 
     .section {
-        height: 50vh; /* Half viewport height */
+        height: 50vh;
     }
 }
 
-/* Style for the wrapper div to control font size */
+
 .wrapper {
-    font-size: 16px; /* Default font size */
-    line-height: 1.5; /* Line height for better readability */
-    padding: 20px; /* Padding around the text */
-    background-color: #f9f9f9; /* Light background color for better contrast */
-    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; 
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 20px 0;
 }
@@ -389,7 +385,7 @@ body {
         margin-bottom: 20px;
         font-weight: 500;
         text-transform: uppercase;
-        color: black; /* Adjust color to fit design */
+        color: black;
     }
 
     #caribbean-welcome .subtitle {
@@ -424,7 +420,7 @@ body {
         margin-bottom: 20px;
         font-weight: 500;
         text-transform: uppercase;
-        color: #000; /* Adjust color to fit design */
+        color: #000;
     }
 
     #pacific-welcome .subtitle {
@@ -467,8 +463,8 @@ body {
         height: auto;
         display: block;
         border-radius: 10px;
-        aspect-ratio: 4 / 3; /* יחס רוחב-גובה 16:9 */
-        object-fit: cover; /* התאמה לתוכן בתוך הקונטיינר */
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
     }
 
 .info-side {
@@ -482,13 +478,13 @@ body {
     .info-side h2 {
         font-size: 5.5rem;
         margin-bottom: 10px;
-        color: black; /* Adjust color to match the design */
+        color: black;
     }
 
     .info-side h3 {
         font-size: 3rem;
         margin-bottom: 10px;
-        color: #211c47; /* Adjust color to match the design */
+        color: #211c47;
     }
 
     .info-side p, .info-side ul {
@@ -503,7 +499,7 @@ body {
     }
 
 
-/* Specific styles for each section */
+
 #puerto-vallarta .info-side,
 #acapulco .info-side,
 #mazatlan .info-side,
@@ -512,14 +508,12 @@ body {
     color: #333;
 }
 
-/* Styling for bullets */
 .info-side ul li {
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .destination {
         flex-direction: column;
@@ -565,7 +559,6 @@ h2 {
         font-size: 2em;
     }
 
-/* Breadcrumb styles */
 .breadcrumb {
     background-color: #f8f9fa;
     padding: 10px 15px;
@@ -594,15 +587,13 @@ h2 {
 .breadcrumb-item.active {
     color: #6c757d;
 }
-/* Container for the entire content area */
 #content-area {
     display: flex;
     justify-content: space-between;
 }
 
-/* Container for the image section */
 #three-pic {
-    width: 65%; /* Left half of the page */
+    width: 65%;
 }
 
     #three-pic ul {
@@ -614,7 +605,7 @@ h2 {
     }
 
     #three-pic li {
-        width: 50%; /* Each image takes half the width of the container */
+        width: 50%;
         padding: 10px;
         box-sizing: border-box;
     }
@@ -623,7 +614,7 @@ h2 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 75%; /* Aspect Ratio 4:3 */
+    padding-top: 75%;
     background: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -675,7 +666,7 @@ h2 {
 }
 #right.col-sm-6 {
     background: hsla(160, 100%, 75%, 0.25);
-    block-size:636px;
+    block-size: 636px;
 }
 #left.col-sm-6 {
     background: hsla(180, 100%, 50%, 0.25);
@@ -795,13 +786,13 @@ h2 {
     }
 
     .txt-center img {
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a nicer look */
-        transition: transform 0.3s ease; /* Smooth transformation */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
     }
 
         .txt-center img:hover {
-            transform: scale(1.05); /* Slight zoom on hover */
+            transform: scale(1.05);
         }
 
 
