@@ -1,0 +1,508 @@
+body {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-default {
+    margin-left: auto;
+}
+
+.logo-link {
+    order: 1;
+    margin-left: 20px;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    max-width: 150px;
+    transition: all .3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar-default .navbar-nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
+}
+
+.content-overlay h1 {
+    font-size: 4em;
+    margin: .5em 0;
+}
+
+.content-overlay h2 {
+    font-size: 2.5em;
+    margin: .5em 0;
+}
+
+.content-overlay .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.split-sections {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.caribbean {
+    background-color: hsla(180, 100%, 50%, .25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+.pacific {
+    background-color: hsla(160, 100%, 75%, .25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+#pacific-welcome {
+    background-color: hsla(160, 100%, 75%, .25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+#caribbean-welcome {
+    background-color: hsla(180, 100%, 50%, .25);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.section a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    color: #007ee5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color .3s, color .3s;
+}
+
+.section a:hover {
+    background-color: #007ee5;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .split-sections {
+        flex-direction: column;
+    }
+
+    .section {
+        height: 50vh;
+    }
+}
+
+.wrapper {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    margin: 20px 0;
+}
+
+.wrapper p b {
+    font-size: 1.2em;
+}
+
+.wrapper {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 15px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+
+    .content-overlay h1 {
+        font-size: 2em;
+    }
+
+    .content-overlay h2 {
+        font-size: 1.5em;
+    }
+
+    .split-sections {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section {
+        height: 50vh;
+    }
+}
+
+#about_photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery a {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.gallery h2 {
+    text-align: center;
+}
+
+#secondChoiseHP1,
+#secondChoiseHP2 {
+    margin: 10px;
+}
+
+#siteMap ul {
+    display: inline-block;
+}
+
+#siteMap ul li {
+    margin-bottom: 10px;
+}
+
+#siteMap ul li ul li:first-child {
+    padding-top: 20px;
+}
+
+#siteMap ul li a {
+    text-decoration: none;
+    font-size: 14pt;
+    margin-bottom: 30px;
+}
+
+#siteMap ul li a:focus,
+#siteMap ul li a:hover {
+    text-decoration: underline;
+}
+
+#siteMap ul:first-child > li {
+    float: right;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+#siteMap ul:first-child > li > a {
+    font-weight: 700;
+}
+
+#siteMap h1 {
+    width: 100px;
+    position: relative;
+    top: 105px;
+    right: -810px;
+    font-weight: 700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+#welcome-message {
+    text-align: center;
+    padding: 100px 20px;
+    background: url(path/to/your/background-image.jpg) no-repeat center center/cover;
+    color: #fff;
+}
+
+#caribbean-welcome {
+    text-align: center;
+    padding: 60px 20px;
+    background: hsla(180, 100%, 50%, .25);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    margin: 20px 0;
+}
+
+#caribbean-welcome .main-title {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+#caribbean-welcome .subtitle {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#caribbean-welcome .thin {
+    font-weight: 100;
+}
+
+#pacific-welcome {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, rgba(255, 239, 186, .8), rgba(226, 190, 122, .8)), url(path/to/pacific-background.jpg) no-repeat center center/r;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+#pacific-welcome .main-title {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+#pacific-welcome .subtitle {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#pacific-welcome .thin {
+    font-weight: 100;
+}
+
+#content {
+    padding: 20px;
+}
+
+.destination {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.image-side {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.image-side img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.info-side {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-side h2 {
+    font-size: 5.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.info-side h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #211c47;
+}
+
+.info-side p,
+.info-side ul {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.info-side ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#acapulco .info-side,
+#cabo-san-lucas .info-side,
+#mazatlan .info-side,
+#puerto-vallarta .info-side {
+    background-color: rgba(255, 255, 255, .8) !important;
+    color: #333;
+}
+
+.info-side ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.destination {
+    flex-direction: column;
+}
+
+.image-side,
+.info-side {
+    min-width: 100%;
+    padding: 10px;
+}
+
+.image-side {
+    padding-right: 0;
+}
