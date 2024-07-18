@@ -88,6 +88,7 @@ header {
     .content-overlay h1 {
         font-size: 4em; /* Larger font size */
         margin: 0.5em 0;
+        font-family: system-ui;
     }
 
     .content-overlay h2 {
