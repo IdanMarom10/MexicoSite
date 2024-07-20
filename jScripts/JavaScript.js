@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     var nameInput = document.getElementById('name');
     var proteinRadios = Array.from(document.querySelectorAll('input[name="protein"]'));
     var extrasCheckboxes = Array.from(document.querySelectorAll('input[name="extras"]'));
@@ -18,7 +18,7 @@
                 break;
             }
         }
-        if (nameFilled == true && proteinSelected == true) {
+        if (nameFilled && proteinSelected) {
             submitBtn.disabled = false;
         } else {
             submitBtn.disabled = true;
@@ -58,7 +58,8 @@
         }
 
         orderSummary.innerHTML = "שם: " + name + "<br>חלבון: " + selectedProtein + "<br>תוספות: " + selectedExtras.join(', ');
-        confirmation.style.display = 'block';
+        document.getElementById('confirmation').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
     }
 
     nameInput.addEventListener('input', function () {
@@ -86,6 +87,10 @@
         handleSubmit();
     });
 });
+function closePopup() {
+    document.getElementById('confirmation').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+}
 
 /*ממקודם */
 function changeTab(str) {
