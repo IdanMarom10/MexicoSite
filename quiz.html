@@ -54,9 +54,11 @@
             <li class="breadcrumb-item active" aria-current="page">הבוריטו המושלם</li>
         </ol>
     </nav>
-        <div class="container">
-            <h1>טופס בניית בוריטו</h1>
-            <form id="burritoForm">
+    <div class="container">
+        <h1 id="formTitle">בניית הבוריטו המושלם</h1>
+        <div class="content">
+            <!-- Menu Form -->
+            <form id="menuForm">
                 <label for="name">שם מלא:</label>
                 <input type="text" id="name" name="name">
 
@@ -82,42 +84,50 @@
                     <label for="guacamole">גוואקמולה</label><br>
                 </fieldset>
 
-                <button type="button" id="submitBtn" disabled>שלח הזמנה</button>
+                <button type="button" id="submitBtn" disabled onclick="handleSubmit()">שלח הזמנה</button>
             </form>
 
-            <div class="images">
-                <img id="chickenImage" src="https://via.placeholder.com/100?text=Chicken" alt="עוף" style="display:none;">
-                <img id="beefImage" src="https://via.placeholder.com/100?text=Beef" alt="בקר" style="display:none;">
-                <img id="tofuImage" src="https://via.placeholder.com/100?text=Tofu" alt="טופו" style="display:none;">
-                <img id="lettuceImage" src="https://via.placeholder.com/100?text=Lettuce" alt="חסה" style="opacity:0.5;">
-                <img id="cheeseImage" src="https://via.placeholder.com/100?text=Cheese" alt="גבינה" style="opacity:0.5;">
-                <img id="salsaImage" src="https://via.placeholder.com/100?text=Salsa" alt="סלסה" style="opacity:0.5;">
-                <img id="guacamoleImage" src="https://via.placeholder.com/100?text=Guacamole" alt="גוואקמולה" style="opacity:0.5;">
+            <!-- Order Display -->
+            <div id="orderDisplay">
+                <h2 id="orderTitle">ההזמנה שלך</h2><br>
+                <h3>חלבון:</h3>
+                <div class="items proteins">
+                    <img src="images/chicken.jpg" alt="עוף" id="chickenImage">
+                    <img src="images/beef.png" alt="בקר" id="beefImage">
+                    <img src="images/tofu.png" alt="טופו" id="tofuImage">
+                </div>
+                <h3>תוספות:</h3>
+                <div class="items extras">
+                    <img src="images/lettuce.png" alt="חסה" id="lettuceImage">
+                    <img src="images/cheese.png" alt="גבינה" id="cheeseImage">
+                    <img src="images/salsa.png" alt="סלסה" id="salsaImage">
+                    <img src="images/guacamole.png" alt="גוואקמולה" id="guacamoleImage">
+                </div>
             </div>
         </div>
-
         <div id="confirmation" style="display:none;">
             <h2>הזמנה התקבלה!</h2>
             <p id="orderSummary"></p>
+            <button onclick="closePopup()">סגור</button>
         </div>
 
-<footer>
-    <nav>
-        <ul>
-            <li><a href="contactUs.html">צור קשר</a></li>
-            <li><a href="sitemap.html">מפת אתר</a></li>
-            <li><a href="about.html">אודות</a></li>
-        </ul>
-    </nav>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="contactUs.html">צור קשר</a></li>
+                <li><a href="sitemap.html">מפת אתר</a></li>
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+        </nav>
+        <p>
+            מקסיקו © 2024<br />
+            כל מה שקשור לחופים היפים של מקסיקו
+        </p>
+    </footer>
 
-    <p>
-        מקסיקו © 2024<br />
-        כל מה שקשור לחופים היפים של מקסיקו
-    </p>
-</footer>
-
-<a id="back-to-top" onclick="topFunction();" href="javascript:void(0);">
-    <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
-</a>
+    <a id="back-to-top" onclick="topFunction();" href="javascript:void(0);">
+        <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+    </a>
 </body>
 </html>
