@@ -63,13 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     nameInput.addEventListener('input', function () {
-        console.log('Name input changed:', nameInput.value);
         updateSubmitButtonState();
     });
 
     for (var i = 0; i < proteinRadios.length; i++) {
         proteinRadios[i].addEventListener('change', function () {
-            console.log('Protein changed:', this.value);
             updateSubmitButtonState();
             updateImages();
         });
@@ -77,13 +75,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (var i = 0; i < extrasCheckboxes.length; i++) {
         extrasCheckboxes[i].addEventListener('change', function () {
-            console.log('Extra changed:', this.value);
             updateImages();
         });
     }
 
     submitBtn.addEventListener('click', function () {
-        console.log('Submit button clicked');
         handleSubmit();
     });
 });
