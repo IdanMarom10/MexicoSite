@@ -74,13 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // מאזינים לשינויים בקלטים לעדכון מצב כפתור השליחה
     nameInput.addEventListener('input', function () {
-        console.log('Name input changed:', nameInput.value); // תיעוד שינוי קלט השם
         updateSubmitButtonState(); // קריאה לפונקציה לעדכון מצב כפתור השליחה
     });
 
     for (var i = 0; i < proteinRadios.length; i++) {
         proteinRadios[i].addEventListener('change', function () {
-            console.log('Protein changed:', this.value); // תיעוד שינוי בחירת חלבון
             updateSubmitButtonState(); // קריאה לפונקציה לעדכון מצב כפתור השליחה
             updateImages(); // קריאה לפונקציה לעדכון התמונות בהתאם לבחירה
         });
@@ -88,14 +86,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     for (var i = 0; i < extrasCheckboxes.length; i++) {
         extrasCheckboxes[i].addEventListener('change', function () {
-            console.log('Extra changed:', this.value); // תיעוד שינוי בחירת תוספת
             updateImages(); // קריאה לפונקציה לעדכון התמונות בהתאם לבחירה
         });
     }
 
     // מאזין ללחיצה על כפתור השליחה
     submitBtn.addEventListener('click', function () {
-        console.log('Submit button clicked'); // תיעוד לחיצה על כפתור השליחה
         handleSubmit(); // קריאה לפונקציה לטיפול בלחיצה על כפתור השליחה
     });
 });
