@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // הצגת תקציר ההזמנה בחלון האישור
         orderSummary.innerHTML = "שם: " + name + "<br>חלבון: " + selectedProtein + "<br>תוספות: " + selectedExtras.join(', ');
         confirmation.style.display = 'block'; // הצגת חלון האישור
-        document.getElementById('overlay').style.display = 'block'; // הצגת שכבת החפיפה
     }
 
     // מאזינים לשינויים בקלטים לעדכון מצב כפתור השליחה
