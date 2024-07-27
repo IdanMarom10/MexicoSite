@@ -98,5 +98,4 @@ document.addEventListener('DOMContentLoaded', function () {
 // פונקציה לסגירת חלון האישור
 function closePopup() {
     document.getElementById('confirmation').style.display = 'none'; // הסתרת חלון האישור
-    document.getElementById('overlay').style.display = 'none'; // הסתרת שכבת החפיפה
 }
